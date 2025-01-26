@@ -1,0 +1,7 @@
+
+@media (min-width:1201px){
+    .hamburger, .hamburger-expand {
+        display:none; 
+         visibility:hidden;
+      }
+}

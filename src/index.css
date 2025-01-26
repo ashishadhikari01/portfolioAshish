@@ -1,0 +1,352 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  /* background-color: #eeeff1; */
+}
+html{
+  scroll-padding-top:75px;
+  /* font-size: 62.5%; */
+}
+.nav-bar{
+padding:15px;
+display:flex;
+opacity: 100%;
+justify-content:flex-end;
+align-items: center;
+position: fixed;
+top:0;
+left:0;
+width:100%;
+height:75px;
+z-index:100;
+/* border:1px solid red; */
+}
+.nav-bar div{
+  margin-right:auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* border:1px solid red; */
+}
+nav a{
+  /* border:1px solid red; */
+  margin-right:13px;
+  text-decoration: none;
+  font-size:25px;
+  padding:7px;
+  font-weight:600;
+}
+#about{
+  padding-top:90px;
+}
+.About-wrapper{
+  padding:10px;
+  display:flex;
+  margin:auto;
+  width:85%;
+  gap:50px;
+  /* border:1px solid blue; */
+}
+.about-left-container{
+  /* margin-top:40px; */
+  /* border:1px solid red; */
+  /* flex:1; */
+}
+
+.profile-container{
+  border:5px solid blue;
+  border-radius:50%;
+  width:400px;
+  height:400px;
+  overflow:hidden;
+}
+.profile-container img{
+  width: 100%;
+  margin-top:-20px;
+  margin-left:4px;
+  transform: rotate(-5deg) scale(1.2);
+  object-fit: cover;
+}
+.action-button{
+  display: flex;
+  justify-content: center;
+  margin-top:7px;
+  padding:5px;
+  gap:25px;
+}
+.action-button #hire-me-btn, #see-resume-btn{
+  padding:5px;
+  cursor: pointer;
+  background-color: blue;
+  border-radius:10px;
+  font-weight:600;
+  font-style: unset;
+  border:2px solid blue;
+  color:white;
+}
+.all-action-btns:hover {
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.all-action-btns:active {
+  transform: scale(1.0); /* Return to normal size when button is clicked */
+}
+.about-right-container{
+  /* border:1px solid red; */
+  flex:1;
+  /* height:100%; */
+}
+.first-intro{
+  margin-top:20px;
+  line-height:1.5;
+  text-decoration: none;
+}
+.second-intro{
+  margin-top:10px;
+  font-size:25px;
+  font-weight:bold;
+  font-style:oblique;
+  text-justify:justify;
+}
+.social-media{
+  margin-top:25px;
+  display:flex;
+}
+.social-media a{
+  padding:5px;
+}
+.social-media img{
+  padding:2px;
+}
+.social-media img:hover{
+  /* filter:brightness(1.1); */
+  transform:scale(1.2);
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.third-intro{
+  margin-top:5px;
+  font-weight: bold;
+  font-style: normal;
+}
+.dark_mode{
+  /* background-color: rgba(40, 45, 53, 1); */
+}
+
+/*------- expertise section begins-------- */
+#expertise{
+  /* border:1px solid red; */
+  padding-bottom: 20px;
+}
+.expertise-wrapper{
+  /* border:1px solid red; */
+  margin:auto;
+  width:80%;
+  padding:20px;
+  /* color:#1a1a1f9f; */
+}
+.logo{
+  width:130px;
+  height:130px;
+}
+.logo img{
+  width:100%;
+  height:auto;
+  max-width:100%;
+}
+.exp0{
+  display: flex;
+  /* border:1px solid red; */
+  padding:10px;
+  column-gap:40px;
+  margin-top:7px;
+}
+.logo{
+  display:flex;
+  align-self: center;
+  background-color:transparent;
+}
+.content{
+ display: flex;
+ flex-direction: column;
+align-self: center;
+}
+.education{
+  margin:30px auto auto auto;
+  /* row-gap:10px; */
+}
+.edu0,.edu1{
+  display: flex;
+  padding:10px;
+  column-gap: 50px;
+  margin-top:15px;
+  /* border:1px solid red; */
+  /* margin-top:5px; */
+}
+
+/*------------------ projects begins from hereeeee----------- */
+#projects{
+  /* border:1px solid red; */
+  padding-top:20px;
+  padding-bottom:25px;
+}
+.projects-title{
+  margin:auto auto 20px auto;
+  width:80%;
+  padding-bottom:5px;
+}
+.projects-wrapper{
+  margin:auto;
+  width:80%;
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+  padding-bottom:15px;
+}
+.project{
+height:auto;
+padding:7px;
+border-radius:10px;
+max-width:100%;
+word-wrap: break-word;
+width:385px;
+cursor:pointer;
+}
+.project:hover{
+  transform: scale(1.03);
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.project h2{
+  text-align: center;
+}
+.project div{
+margin-top:10px;
+ line-height:1.45;
+}
+.project div .description{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-weight: 600; */
+  font-size:23px;
+  margin-bottom:10px;
+}
+.project div span{
+  font-weight: bold;
+}
+.project div a{
+  font-style:italic;
+  text-decoration: none;
+}
+.project div a:hover{
+  text-decoration:underline;
+  transition:ease-in-out;
+}
+.technologyUsed{
+  margin-top:15px;
+  margin-bottom:7px;
+}
+.technologyUsed span{
+  padding:3px 15px;
+  font-weight:600;
+  background-color:rgb(125, 125, 125);
+  opacity:50%;
+  text-align: center;
+  margin-right:7px;
+  border-radius:7px;
+  /* color:white; */
+  /* color:rgba(40, 45, 53, 0.677); */
+}
+.technologyUsed span:hover{
+  background-color:rgba(125, 125, 125, 0.526);
+  transition: all cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+
+/* -------------contact form starts from heree----------- */
+
+#contact{
+    padding-top:25px;
+  /* background-color:#eeeff1; */
+  /* border:1px solid red; */
+  /* border:1px solid red; */
+  /* border-radius: 5px; */
+}
+.contact-title{
+  margin:auto;
+  width:80%;
+  padding-top:10px;
+}
+.contact-wrapper{
+  /* border:1px solid red; */
+  margin:5px auto 0px auto;
+}
+ .contact-wrapper form{
+  margin:0 auto;
+  width:60%;
+  padding:30px 20px 20px 20px;
+  /* border:1px solid red; */
+}
+.contact-wrapper form div,button{
+  margin-bottom:13px;
+  /* border:1px solid red; */
+}
+.contact-wrapper form div input,textarea{
+  display:flex;
+  justify-content: center;
+  border-radius:7px;
+  padding:15px;
+  margin:auto;
+  width:100%;
+  border:2px solid #f3f7ff;   
+   /* #f3f7ff */
+  /* background-color:rgba(135, 206, 250, 0.286); */
+  /* color:black; */
+}
+.contact-wrapper form input:focus, textarea:focus{
+    outline: none;
+    border-color: blue;
+   transition: all 0.25s;
+}
+.contact-wrapper form button{
+  border:2px solid blue;
+  margin:auto;
+  width:160px;
+  height:45px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 255);
+  color:white;
+  font-weight:600;
+  border-radius: 5px;
+}
+.contact-wrapper button:hover{
+background-color: rgba(36, 36, 255, 0.93);
+border-color:rgba(89, 89, 185, 0.93);
+transition: all 0.25s;
+}
+.contact-wrapper button:active{
+transform:scale(0.80);
+transition: all 0.25s;
+}
+
+
+/* ----------------------footer section begins here------------------- */
+#footer{
+  height:75px;
+  /* background-color:rgba(255, 255, 255, 0.814); */
+  /* border:1px solid red; */
+}
+.footer-wrapper{
+display:flex;
+justify-content:end;
+align-items:center;
+height: 100%;
+width:98%;
+}
+.arrow-up{
+  cursor:pointer;
+}
+.arrow-up img{
+  background-color: #f3f7ff;
+  border-radius: 5px;
+  padding:7px;
+  /* border:1px solid red; */
+}

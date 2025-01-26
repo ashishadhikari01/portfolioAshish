@@ -8,7 +8,7 @@ export default function About(){
   <div className="about-left-container">
       <div className="profile-container">
       <img src="/ashishProfile.jpg" alt="ashish-profile"/>
-      </div>
+      </div> 
       <div className="action-button">
       <a href="#contact">
       <button id="hire-me-btn" className="all-action-btns">Hire Me</button>

@@ -11,11 +11,11 @@ export default [
   },
   {
     id:1,
-    description:"consist of the basic web apps while learning javascript through freecode camp.It consist of the basic web apps made while learning javascript through freecode camp.",
-    technologyUsed:["py","html","react"],
-    title:"portfolio",
-    github:"https://github.com/ashishadhikari01/portfolio",
-    live:"https://ashishadhikari.netlify.app/"
+    description:"A system made for membership issuing in IT clubs with various features to support the regular task.",
+    technologyUsed:["HTML","Javascript","CSS"],
+    title:"Membership Issue System",
+    github:"https://github.com/ashishadhikari01/MIS_USER_PANEL",
+    live:"https://membersystem.netlify.app/"
   },
   {
     id:2,
@@ -24,11 +24,4 @@ export default [
     github:"https://github.com/ashishadhikari01/weather",
     live:"https://ashishadhikari.netlify.app/"
   },
-  {
-    id:3,
-    technologyUsed:["html","tailwind css","typescript"],
-    title:"uff ufff",
-    github:"https://github.com/ashishadhikari01/lal",
-    live:"launaaa"
-  }
 ]

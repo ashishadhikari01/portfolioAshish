@@ -5,7 +5,7 @@ export default function Expertise() {
     <div className="expertise-wrapper">
       {/* Experience section */}
       <div className="experience">
-        <h1>Experience</h1>
+        <h1 className="experience-heading">Experience</h1>
         <div className="exp0">
           <div className="logo">
             <img
@@ -24,7 +24,7 @@ export default function Expertise() {
 
       {/* Education section */}
       <div className="education">
-        <h1>Education</h1>
+        <h1 className='education-heading'>Education</h1>
         <div className="edu1">
           <div className="logo">
             <img

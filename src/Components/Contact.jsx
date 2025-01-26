@@ -1,6 +1,9 @@
 import React from "react"
+import emailjs from '@emailjs/browser';
 
 export default function Contact(props){
+  const form1=React.useRef()
+  
   const [formData,setFormData]=React.useState({visitorName:"",visitorEmail:"",visitorMessage:""})
   function handleChange(event){
    setFormData(prevFormData=>{
@@ -50,15 +53,29 @@ export default function Contact(props){
       messageStatus=true
     }
     if(nameStatus && emailStatus && messageStatus){
-      console.log(formData)
+      emailjs
+      .sendForm('service_uwdxeww', 'template_rgysvyb', form1.current, {
+        publicKey: 'pAjlIZZbeWvs1vCOJ',
+      })
+      .then(
+        () => {
+          alert("Thank you for your message")
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
      setFormData({visitorName:"",visitorEmail:"",visitorMessage:""})
+     formName.style.border =""
+      formEmail.style.border=""
+      formMessage.style.border=""
     }
    }
   return (
     <div>
       <h1 className="contact-title">Contact</h1>
     <div className="contact-wrapper">
-    <form onSubmit={handleSubmit} noValidate action="send-mail.php" method="post">
+    <form onSubmit={handleSubmit} noValidate ref={form1}>
     <div>
       <input 
       type="text" 
@@ -91,7 +108,6 @@ export default function Contact(props){
         className="form-message"
         />
         </div>
-        <div><p className="errorMessage" style={{color:"red"}}></p></div>
         <button>Send</button>
     </form>
       </div>
